@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1172129,      22083]
-NotebookOptionsPosition[   1168002,      21998]
-NotebookOutlinePosition[   1168973,      22031]
-CellTagsIndexPosition[   1168901,      22026]
+NotebookDataLength[   1178903,      22223]
+NotebookOptionsPosition[   1174448,      22133]
+NotebookOutlinePosition[   1175419,      22166]
+CellTagsIndexPosition[   1175347,      22161]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -13005,6 +13005,141 @@ oPud/C8XbwP9/wx1wnhvPE8Ii+d6G2jeVv78wRv4uUj/BxJrLvE=
   "Out[329]=",ExpressionUUID->"9f5277e6-beba-48cb-a670-a0b2520d77ce"]
 }, Open  ]],
 
+Cell["\<\
+The next step is to determine pair the temperature at the time and location \
+of my run with the distance of my run:\
+\>", "Text",
+ CellChangeTimes->{{3.7706501684795284`*^9, 
+  3.770650293182789*^9}},ExpressionUUID->"9c43d51f-1d91-4e54-a88c-\
+a3232e1cd492"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Merge", "[", 
+  RowBox[{
+   RowBox[{"data", "[", 
+    RowBox[{"All", ",", "\"\<Date\>\""}], "]"}], ",", 
+   RowBox[{"Dataset", "[", 
+    RowBox[{"Import", "[", "\"\<RunStartCoords.dat\>\"", "]"}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.770650298174094*^9, 3.7706503572802873`*^9}, {
+  3.7706512902105556`*^9, 3.770651295015095*^9}, {3.770651367931917*^9, 
+  3.7706513850223584`*^9}, {3.7706516868634195`*^9, 3.770651734434471*^9}, {
+  3.770651813062851*^9, 3.770651878821694*^9}, {3.77065197290703*^9, 
+  3.770651973502313*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"bb4140cd-8790-4b9f-bb0d-c6c59b408d94"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The argument \
+\\!\\(\\*TagBox[RowBox[{\\\"DateObject\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"2019\\\", \\\",\\\", \\\"6\\\", \
+\\\",\\\", \\\"25\\\", \\\",\\\", \\\"7\\\", \\\",\\\", \\\"34\\\", \
+\\\",\\\", \\\"44\\\"}], \\\"}\\\"}], \\\",\\\", \
+\\\"\\\\\\\"Instant\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Gregorian\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"4.`\\\"}]}], \\\"]\\\"}], Function[Short[Slot[1], 5]]]\\) is not a valid \
+list of Associations or rules or lists of rules.\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["Merge", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The argument \
+\\!\\(\\*TagBox[RowBox[{\\\"DateObject\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"2019\\\", \\\",\\\", \\\"6\\\", \
+\\\",\\\", \\\"25\\\", \\\",\\\", \\\"7\\\", \\\",\\\", \\\"34\\\", \
+\\\",\\\", \\\"44\\\"}], \\\"}\\\"}], \\\",\\\", \
+\\\"\\\\\\\"Instant\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Gregorian\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"4.`\\\"}]}], \\\"]\\\"}], Function[Short[Slot[1], 5]]]\\) is not a valid \
+list of Associations or rules or lists of rules.\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["Merge", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure[Merge, 
+   Association[
+   "MessageTemplate" :> MessageName[Merge, "list1"], "MessageParameters" -> {
+      HoldForm[
+       DateObject[{2019, 6, 25, 7, 34, 44}, "Instant", "Gregorian", -4.]]}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.770650325661109*^9, {3.7706518602868867`*^9, 3.770651881059144*^9}, 
+   3.770651976117976*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"18fd45ca-cdd3-452e-a59e-f57ec2f01ce2"]
+}, Open  ]],
+
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.770580389303954*^9, 3.770580397607336*^9}, 
    3.7705804358301783`*^9},ExpressionUUID->"3c9597f9-c605-47b3-b780-\
@@ -22025,7 +22160,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 1168762, 22020}
+ {"Title", 1175208, 22155}
  }
 *)
 (*NotebookFileOutline
@@ -22073,16 +22208,21 @@ Cell[CellGroupData[{
 Cell[612570, 12815, 890, 20, 28, "Input",ExpressionUUID->"768aa3dc-3dfa-4294-9800-5f133bb4dc7b"],
 Cell[613463, 12837, 8717, 167, 397, "Output",ExpressionUUID->"9f5277e6-beba-48cb-a670-a0b2520d77ce"]
 }, Open  ]],
-Cell[622195, 13007, 177, 3, 28, "Input",ExpressionUUID->"3c9597f9-c605-47b3-b780-ee1331f4cf9b"],
+Cell[622195, 13007, 268, 6, 34, "Text",ExpressionUUID->"9c43d51f-1d91-4e54-a88c-a3232e1cd492"],
 Cell[CellGroupData[{
-Cell[622397, 13014, 232, 4, 28, "Input",ExpressionUUID->"895baed6-9c09-4b19-9ea4-c2e10327f895"],
-Cell[622632, 13020, 1519, 25, 90, "Output",ExpressionUUID->"33bf6471-0dfc-4f1b-ab16-8da48ed1c097"]
+Cell[622488, 13017, 643, 13, 28, "Input",ExpressionUUID->"bb4140cd-8790-4b9f-bb0d-c6c59b408d94"],
+Cell[623134, 13032, 5492, 107, 69, "Output",ExpressionUUID->"18fd45ca-cdd3-452e-a59e-f57ec2f01ce2"]
+}, Open  ]],
+Cell[628641, 13142, 177, 3, 28, "Input",ExpressionUUID->"3c9597f9-c605-47b3-b780-ee1331f4cf9b"],
+Cell[CellGroupData[{
+Cell[628843, 13149, 232, 4, 28, "Input",ExpressionUUID->"895baed6-9c09-4b19-9ea4-c2e10327f895"],
+Cell[629078, 13155, 1519, 25, 90, "Output",ExpressionUUID->"33bf6471-0dfc-4f1b-ab16-8da48ed1c097"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[624188, 13050, 431, 9, 28, "Input",ExpressionUUID->"24323f7e-e814-4c7c-915d-2059e93c4fd7"],
-Cell[624622, 13061, 543181, 8927, 201, "Output",ExpressionUUID->"6d989a30-573f-4cee-8426-38517ff3c5a1"]
+Cell[630634, 13185, 431, 9, 28, "Input",ExpressionUUID->"24323f7e-e814-4c7c-915d-2059e93c4fd7"],
+Cell[631068, 13196, 543181, 8927, 201, "Output",ExpressionUUID->"6d989a30-573f-4cee-8426-38517ff3c5a1"]
 }, Open  ]],
-Cell[1167818, 21991, 156, 3, 28, "Input",ExpressionUUID->"b826f85a-def9-41f1-b397-260996ca99ad"]
+Cell[1174264, 22126, 156, 3, 28, "Input",ExpressionUUID->"b826f85a-def9-41f1-b397-260996ca99ad"]
 }, Open  ]]
 }, Open  ]]
 }
