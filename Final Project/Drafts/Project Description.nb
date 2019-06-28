@@ -1,0 +1,72 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2681,         64]
+NotebookOptionsPosition[      2387,         51]
+NotebookOutlinePosition[      2729,         66]
+CellTagsIndexPosition[      2686,         63]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Improving the Notebook Archive - Templates and Checks for Computational Essays
+Computational essays are an extremely powerful method of exposition: they \
+offer the ability to tell an interesting, interactive, and precise scientific \
+narrative. The ideal computational essay is written to convey a scientific \
+message with the audience in mind, and contains a mixture of code, text, and \
+other supporting visual elements. Currently, the notebook archive \
+(https://notebookarchive.org/) contains many computational essays and other \
+less structured notebooks without a defined style or guidelines for their \
+submission.
+This aim of this project is to:
+1. Develop a test framework for submissions and existing notebooks on the \
+Notebook Archive. Some examples of tests that could be done include checks \
+for: empty notebooks, broken links, spelling errors, profanity, correct \
+notebook magnification and window size etc.
+2. Create a a basic machine-readable template, allowing for additional \
+automated checks to be performed on a notebook archive submission. This would \
+aim to be similar in nature to the function repository template, where the \
+author can receive feedback on their notebook in real-time, and ideally see \
+the feedback inline in an inline notebook cell. Checks that could be \
+performed on such a template could include: feedback for code-text ratio, \
+missing author information, and suggestions against large blocks of code or \
+text.\
+\>", "Text",
+ CellChangeTimes->{{3.7707508819186935`*^9, 3.7707509560700645`*^9}, {
+  3.7707509915905237`*^9, 3.770751863789328*^9}, {3.7707518990379963`*^9, 
+  3.7707520524238615`*^9}, {3.7707521623874636`*^9, 3.770752283537839*^9}, {
+  3.7707524554558554`*^9, 
+  3.7707524946326895`*^9}},ExpressionUUID->"bded8e24-4302-4a83-8cb9-\
+1786f0cc4512"]
+},
+WindowSize->{775, 796},
+WindowMargins->{{Automatic, 50}, {38, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1825, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"]
+}
+]
+*)
+
