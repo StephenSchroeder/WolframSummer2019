@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2681,         64]
-NotebookOptionsPosition[      2387,         51]
-NotebookOutlinePosition[      2729,         66]
-CellTagsIndexPosition[      2686,         63]
+NotebookDataLength[      2773,         64]
+NotebookOptionsPosition[      2479,         51]
+NotebookOutlinePosition[      2821,         66]
+CellTagsIndexPosition[      2778,         63]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,16 +37,16 @@ notebook magnification and window size etc.
 automated checks to be performed on a notebook archive submission. This would \
 aim to be similar in nature to the function repository template, where the \
 author can receive feedback on their notebook in real-time, and ideally see \
-the feedback inline in an inline notebook cell. Checks that could be \
-performed on such a template could include: feedback for code-text ratio, \
-missing author information, and suggestions against large blocks of code or \
-text.\
+the feedback with an inline notebook cell. Checks that could be performed on \
+such a template could include: feedback for code-text ratio, missing author \
+information, and suggestions against large blocks of code or text.\
 \>", "Text",
  CellChangeTimes->{{3.7707508819186935`*^9, 3.7707509560700645`*^9}, {
   3.7707509915905237`*^9, 3.770751863789328*^9}, {3.7707518990379963`*^9, 
   3.7707520524238615`*^9}, {3.7707521623874636`*^9, 3.770752283537839*^9}, {
-  3.7707524554558554`*^9, 
-  3.7707524946326895`*^9}},ExpressionUUID->"bded8e24-4302-4a83-8cb9-\
+  3.7707524554558554`*^9, 3.7707524946326895`*^9}, {3.770755867560336*^9, 
+  3.7707558695187054`*^9}, {3.7707559814836526`*^9, 
+  3.770755982265736*^9}},ExpressionUUID->"bded8e24-4302-4a83-8cb9-\
 1786f0cc4512"]
 },
 WindowSize->{775, 796},
@@ -65,7 +65,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1825, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"]
+Cell[558, 20, 1917, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"]
 }
 ]
 *)
