@@ -1,0 +1,130 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4235,        120]
+NotebookOptionsPosition[      3577,        103]
+NotebookOutlinePosition[      3913,        118]
+CellTagsIndexPosition[      3870,        115]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"validationRules", " ", "=", " ", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+   "validator1", ",", "\[IndentingNewLine]", "validator2", ",", 
+    "\[IndentingNewLine]", "validator3"}], "\[IndentingNewLine]", 
+   "}"}]}]], "Input",
+ CellChangeTimes->{
+  3.770997647736874*^9, {3.770997678061656*^9, 3.770997716284853*^9}, {
+   3.770997820266282*^9, 
+   3.7709978300890207`*^9}},ExpressionUUID->"fc46ff03-6d1b-49be-a27f-\
+cbd3e62bd217"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ValidationFunction", "[", "cell_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ValidationFunction", "[", "cell_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<The title was too big\>\"", ",", " ", 
+    "\"\<The cell is full of profanities\>\""}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ValidationFunction", "[", "cell_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"<|", 
+     RowBox[{
+     "\"\<Error\>\"", " ", "\[Rule]", " ", "\"\<This cell is too big\>\""}], 
+     "|>"}], ",", "  ", 
+    RowBox[{"<|", 
+     RowBox[{
+     "\"\<Warning\>\"", " ", "\[Rule]", " ", "\"\<This cell is too big\>\""}],
+      "|>"}]}], "}"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.770997741580851*^9, 3.770997805951597*^9}, {
+  3.770997839025076*^9, 
+  3.770997899567727*^9}},ExpressionUUID->"94bc8e75-b7be-4ddd-9b6d-\
+7822e5cc54a9"],
+
+Cell[BoxData[
+ RowBox[{"transformations", " ", "=", " ", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{"transformator1", ",", "\[IndentingNewLine]", "transformator2"}], 
+   "\[IndentingNewLine]", "}"}]}]], "Input",
+ CellChangeTimes->{{3.7709980123664494`*^9, 
+  3.7709980267481937`*^9}},ExpressionUUID->"b1e49e3d-653c-4751-8a33-\
+19a07a623a3f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"transformator1", "[", "notebook_", "]"}], " ", ":=", " ", 
+  "notebook"}]], "Input",
+ CellChangeTimes->{{3.770998030740901*^9, 
+  3.7709980394921913`*^9}},ExpressionUUID->"f21cecb8-d2d3-428b-8782-\
+745393f1416d"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SubmitNotebook", "[", "]"}], " ", ":=", " ", 
+  RowBox[{"SubmitNotebook", "[", 
+   RowBox[{"CurrentNotebook", "[", "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SubmitNotebook", "[", "notebook_", "]"}], " ", ":=", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"calling", " ", "all", " ", "validation", " ", "rules"}], ",", 
+    " ", 
+    RowBox[{
+    "if", " ", "the", " ", "succed", " ", "call", " ", "the", " ", 
+     "transformations"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"SubmitNotebook", "[", 
+    RowBox[{"notebook_", ",", " ", "\"\<Preview\>\""}], "]"}], " ", ":=", " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "open", " ", "a", " ", "new", " ", "notebook", " ", "with", " ", "the", 
+     " ", "applied", " ", "changes"}], " ", "*)"}]}]}]}], "Input",
+ CellChangeTimes->{{3.770998165958098*^9, 
+  3.770998263935236*^9}},ExpressionUUID->"e0d468f2-45ac-4792-b429-\
+da7c44e812b4"]
+},
+WindowSize->{1075, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 466, 11, 115, "Input",ExpressionUUID->"fc46ff03-6d1b-49be-a27f-cbd3e62bd217"],
+Cell[1027, 33, 973, 26, 94, "Input",ExpressionUUID->"94bc8e75-b7be-4ddd-9b6d-7822e5cc54a9"],
+Cell[2003, 61, 349, 7, 94, "Input",ExpressionUUID->"b1e49e3d-653c-4751-8a33-19a07a623a3f"],
+Cell[2355, 70, 247, 6, 30, "Input",ExpressionUUID->"f21cecb8-d2d3-428b-8782-745393f1416d"],
+Cell[2605, 78, 968, 23, 73, "Input",ExpressionUUID->"e0d468f2-45ac-4792-b429-da7c44e812b4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

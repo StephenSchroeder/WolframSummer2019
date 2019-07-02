@@ -1,0 +1,110 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3479,        102]
+NotebookOptionsPosition[      2910,         86]
+NotebookOutlinePosition[      3254,        101]
+CellTagsIndexPosition[      3211,         98]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "SW ",
+ ButtonBox["Blog post about Function Repository",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+   "https : // blog.stephenwolfram.com/2019/06/the - wolfram - function - \
+repository - launching - an - open - platform - for - extending - the - \
+wolfram - language/", None}]
+}], "Text",
+ CellChangeTimes->{{3.770980354986978*^9, 
+  3.7709804123603983`*^9}},ExpressionUUID->"07e54ed8-dd28-48b6-9fcc-\
+e1f4d7353564"],
+
+Cell[TextData[{
+ "Last year\[CloseCurlyQuote]s WSS Project about ",
+ ButtonBox["Test framework for notebook ",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://community.wolfram.com/groups/-/m/t/1378454"], None},
+  ButtonNote->"https://community.wolfram.com/groups/-/m/t/1378454"],
+ "submission\nFrontend attached cell ",
+ ButtonBox["\"Black Magic\"",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://mathematica.stackexchange.com/questions/99292/what-is-\
+frontendattachedcell"], None},
+  ButtonNote->
+   "https://mathematica.stackexchange.com/questions/99292/what-is-\
+frontendattachedcell"],
+ "\nSW ",
+ ButtonBox["blog",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://blog.stephenwolfram.com/2017/11/what-is-a-computational-\
+essay/"], None},
+  ButtonNote->
+   "https://blog.stephenwolfram.com/2017/11/what-is-a-computational-essay/"],
+ " about Computational Essays\nDocs about ",
+ ButtonBox["Obsolete/Incompatible",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://reference.wolfram.com/language/tutorial/IncompatibleChanges.\
+html"], None},
+  ButtonNote->
+   "https://reference.wolfram.com/language/tutorial/IncompatibleChanges.html"],
+ " changes"
+}], "Text",
+ CellChangeTimes->{{3.7709804232631245`*^9, 3.7709805095776196`*^9}, {
+  3.770980550914257*^9, 3.7709805648267655`*^9}, {3.7709813342341127`*^9, 
+  3.7709813624551325`*^9}},ExpressionUUID->"f448342c-df12-4f17-b3a4-\
+0543a787de34"],
+
+Cell["workflow/ApplyAFunctionToCellsInANotebook in F1", "Text",
+ CellChangeTimes->{{3.771014872932497*^9, 
+  3.771014879198635*^9}},ExpressionUUID->"cd973195-607a-4e92-82c8-\
+90c14683bb7d"],
+
+Cell["\<\
+Cells as wolfram language expressions: \
+https://reference.wolfram.com/language/tutorial/\
+CellsAsWolframLanguageExpressions.html\
+\>", "Text",
+ CellChangeTimes->{{3.7710157422971*^9, 
+  3.7710157507585306`*^9}},ExpressionUUID->"0774dc27-f2f1-41c2-affd-\
+e0e4d7c66e87"]
+},
+WindowSize->{775, 797},
+WindowMargins->{{96, Automatic}, {-160, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 434, 11, 34, "Text",ExpressionUUID->"07e54ed8-dd28-48b6-9fcc-e1f4d7353564"],
+Cell[995, 33, 1437, 37, 100, "Text",ExpressionUUID->"f448342c-df12-4f17-b3a4-0543a787de34"],
+Cell[2435, 72, 189, 3, 34, "Text",ExpressionUUID->"cd973195-607a-4e92-82c8-90c14683bb7d"],
+Cell[2627, 77, 279, 7, 56, "Text",ExpressionUUID->"0774dc27-f2f1-41c2-affd-e0e4d7c66e87"]
+}
+]
+*)
+
