@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2773,         64]
-NotebookOptionsPosition[      2479,         51]
-NotebookOutlinePosition[      2821,         66]
-CellTagsIndexPosition[      2778,         63]
+NotebookDataLength[      4615,        108]
+NotebookOptionsPosition[      4045,         92]
+NotebookOutlinePosition[      4388,        107]
+CellTagsIndexPosition[      4345,        104]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47,10 +47,51 @@ information, and suggestions against large blocks of code or text.\
   3.7707524554558554`*^9, 3.7707524946326895`*^9}, {3.770755867560336*^9, 
   3.7707558695187054`*^9}, {3.7707559814836526`*^9, 
   3.770755982265736*^9}},ExpressionUUID->"bded8e24-4302-4a83-8cb9-\
-1786f0cc4512"]
+1786f0cc4512"],
+
+Cell["\<\
+Message to riccardo:
+- Check for spelling errors
+- Check for profanities (depending on language?)
+- Report on obsolete functions
+-check for $Missing, $Failed
+- Put nb at Magnification->100
+- Put nb window size/position to Automatic
+
+
+Notes from night of June 2019:
+The big thing about the notebook archive, is that they are essentially saying \
+that after you submit your notebook, it will keep working and stay on the web. 
+Philosophy for the function repository is that you write first, then check \
+later. It only complains after you use the check function.\
+\>", "Text",
+ CellChangeTimes->{{3.7708458918940916`*^9, 3.7708459914499955`*^9}, {
+   3.7709796636505384`*^9, 3.770979669062402*^9}, {3.7709989998438845`*^9, 
+   3.7709990209564056`*^9}, 
+   3.770999732046254*^9},ExpressionUUID->"0cb0db08-e68a-4af9-806e-\
+836ccade9ec7"],
+
+Cell["\<\
+Each function takes a cell, and prints returns null, error, warning
+then there\[CloseCurlyQuote]s a function that takes several functions and a \
+notebook, and gives each function each cell in the notebook \
+\>", "Text",
+ CellChangeTimes->{{3.771000502718365*^9, 3.771000544681158*^9}, {
+  3.7710005783621016`*^9, 
+  3.7710006146762857`*^9}},ExpressionUUID->"0cd9a5fc-aef5-4648-9ea4-\
+a0a6bcbd42bd"],
+
+Cell["\<\
+notebook import takes the first cell, if there is an error or warning, it \
+will print either __,__,__\
+\>", "Text",
+ CellChangeTimes->{{3.771000623522529*^9, 3.7710006499202547`*^9}, {
+  3.771016749897727*^9, 
+  3.7710167608165827`*^9}},ExpressionUUID->"31804adb-6d7d-4028-9d6b-\
+843ac7921e99"]
 },
-WindowSize->{775, 796},
-WindowMargins->{{Automatic, 50}, {38, Automatic}},
+WindowSize->{775, 402},
+WindowMargins->{{34, Automatic}, {Automatic, 188}},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -65,7 +106,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1917, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"]
+Cell[558, 20, 1917, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"],
+Cell[2478, 51, 843, 20, 320, "Text",ExpressionUUID->"0cb0db08-e68a-4af9-806e-836ccade9ec7"],
+Cell[3324, 73, 409, 8, 78, "Text",ExpressionUUID->"0cd9a5fc-aef5-4648-9ea4-a0a6bcbd42bd"],
+Cell[3736, 83, 305, 7, 34, "Text",ExpressionUUID->"31804adb-6d7d-4028-9d6b-843ac7921e99"]
 }
 ]
 *)
