@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8094,        210]
-NotebookOptionsPosition[      6362,        174]
-NotebookOutlinePosition[      6715,        190]
-CellTagsIndexPosition[      6672,        187]
+NotebookDataLength[      8399,        217]
+NotebookOptionsPosition[      6555,        179]
+NotebookOutlinePosition[      6928,        196]
+CellTagsIndexPosition[      6885,        193]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -169,11 +169,17 @@ porttitor sed.\
 \>", "Text",
  CellChangeTimes->{{3.7710770981583347`*^9, 
   3.771077100493616*^9}},ExpressionUUID->"553fb853-b84e-4349-8a02-\
-b83285cd349a"]
+b83285cd349a"],
+
+Cell["This is a cell that contains the word \"Input\"", "Text",
+ CellChangeTimes->{{3.77115616333057*^9, 
+  3.7711561768784175`*^9}},ExpressionUUID->"b7a88b1b-0a77-4cdf-b5d9-\
+ee76b9c1e551"]
 }, Open  ]]
 },
-WindowSize->Large,
+WindowSize->{968, 904},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Visible->True,
 Magnification->1,
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
@@ -210,7 +216,8 @@ Cell[4261, 128, 233, 4, 28, "Input",ExpressionUUID->"7d2a7686-9bb3-4557-91d8-e74
 Cell[4497, 134, 370, 9, 21, "Message",ExpressionUUID->"679cd3ea-ab19-42f7-b6c8-b1074d0aee4c"],
 Cell[4870, 145, 161, 3, 32, "Output",ExpressionUUID->"145d3e9a-074a-4073-b192-280ea23347c5"]
 }, Open  ]],
-Cell[5046, 151, 1300, 20, 210, "Text",ExpressionUUID->"553fb853-b84e-4349-8a02-b83285cd349a"]
+Cell[5046, 151, 1300, 20, 210, "Text",ExpressionUUID->"553fb853-b84e-4349-8a02-b83285cd349a"],
+Cell[6349, 173, 190, 3, 34, "Text",ExpressionUUID->"b7a88b1b-0a77-4cdf-b5d9-ee76b9c1e551"]
 }, Open  ]]
 }
 ]
