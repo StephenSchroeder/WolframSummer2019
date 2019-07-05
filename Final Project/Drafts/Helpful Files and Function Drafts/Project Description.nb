@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4615,        108]
-NotebookOptionsPosition[      4045,         92]
-NotebookOutlinePosition[      4388,        107]
-CellTagsIndexPosition[      4345,        104]
+NotebookDataLength[      5157,        120]
+NotebookOptionsPosition[      4496,        103]
+NotebookOutlinePosition[      4839,        118]
+CellTagsIndexPosition[      4796,        115]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -88,7 +88,18 @@ will print either __,__,__\
  CellChangeTimes->{{3.771000623522529*^9, 3.7710006499202547`*^9}, {
   3.771016749897727*^9, 
   3.7710167608165827`*^9}},ExpressionUUID->"31804adb-6d7d-4028-9d6b-\
-843ac7921e99"]
+843ac7921e99"],
+
+Cell["\<\
+In previewed Notebook, include a cell at the top, called ValidationBar that \
+removes all the cells with errors that we added, then runs the validation \
+again. There should also be a publish button
+\
+\>", "Text",
+ CellChangeTimes->{{3.771342462375772*^9, 3.7713424959231863`*^9}, {
+  3.7713426138087473`*^9, 3.771342631933363*^9}, {3.771342667189303*^9, 
+  3.771342723697254*^9}},ExpressionUUID->"fecb428b-783f-49ed-a9d1-\
+fff959af2162"]
 },
 WindowSize->{775, 402},
 WindowMargins->{{34, Automatic}, {Automatic, 188}},
@@ -109,7 +120,8 @@ Notebook[{
 Cell[558, 20, 1917, 29, 386, "Text",ExpressionUUID->"bded8e24-4302-4a83-8cb9-1786f0cc4512"],
 Cell[2478, 51, 843, 20, 320, "Text",ExpressionUUID->"0cb0db08-e68a-4af9-806e-836ccade9ec7"],
 Cell[3324, 73, 409, 8, 78, "Text",ExpressionUUID->"0cd9a5fc-aef5-4648-9ea4-a0a6bcbd42bd"],
-Cell[3736, 83, 305, 7, 34, "Text",ExpressionUUID->"31804adb-6d7d-4028-9d6b-843ac7921e99"]
+Cell[3736, 83, 305, 7, 34, "Text",ExpressionUUID->"31804adb-6d7d-4028-9d6b-843ac7921e99"],
+Cell[4044, 92, 448, 9, 78, "Text",ExpressionUUID->"fecb428b-783f-49ed-a9d1-fff959af2162"]
 }
 ]
 *)

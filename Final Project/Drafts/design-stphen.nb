@@ -1,0 +1,509 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21718,        501]
+NotebookOptionsPosition[     20570,        474]
+NotebookOutlinePosition[     20907,        489]
+CellTagsIndexPosition[     20864,        486]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Proposed design", "Title",
+ CellChangeTimes->{{3.771341826047442*^9, 
+  3.7713418289587317`*^9}},ExpressionUUID->"ec0620a5-ce82-44a8-8e03-\
+3b352559c3a5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ValidateNotebook", "[", "nb_", "]"}], " ", ":=", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "can", " ", "return", " ", "either", " ", "a", " ", "Failure", " ", "or", 
+    " ", "a", " ", "Success"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7713418308174553`*^9, 3.771341854582036*^9}, {
+  3.771341921132194*^9, 
+  3.77134192475548*^9}},ExpressionUUID->"c5a4ec44-5fc1-4481-a354-\
+1854ec9f88f2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"success", " ", "=", " ", 
+  RowBox[{"Success", "[", "\[IndentingNewLine]", 
+   RowBox[{"\"\<ValidNotebook\>\"", ",", "\[IndentingNewLine]", 
+    RowBox[{"<|", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "\"\<MessageTemplate\>\"", "\[RuleDelayed]", 
+       "\"\<The notebook is valid with `warnings` warning(s).\>\""}], ",", 
+      RowBox[{"\"\<MessageParameters\>\"", "\[Rule]", 
+       RowBox[{"<|", 
+        RowBox[{"\"\<warnings\>\"", "\[Rule]", "2"}], "|>"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"\"\<Warnings\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<This cell contains profanity\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<This cell is returning $Failed\>\""}], "\[IndentingNewLine]", 
+        "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<Errors\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<ValidatedNotebook\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"Notebook", "[", "]"}]}], ",", " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{
+        "notebook", " ", "ready", " ", "to", " ", "be", " ", "published"}], 
+        ",", " ", 
+        RowBox[{
+        "with", " ", "fixes", " ", "but", " ", "no", " ", "errors"}]}], " ", 
+       "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"\"\<PreviewNotebook\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"Notebook", "[", "]"}]}], ",", " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{"notebook", " ", "to", " ", "review"}], ",", " ", 
+        RowBox[{
+        "with", " ", "errors", " ", "and", " ", "automatic", " ", "fixes"}]}],
+        " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"\"\<TimeStamp\>\"", "\[Rule]", 
+       RowBox[{"DateString", "[", "]"}]}]}], "\[IndentingNewLine]", "|>"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7713415546783333`*^9, 3.771341703552491*^9}, {
+  3.771341773281829*^9, 3.7713417755507803`*^9}, {3.7713420467463503`*^9, 
+  3.7713421363775377`*^9}},ExpressionUUID->"497a3332-82ca-4464-a079-\
+2c30e7ca114e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Success",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[Checkmark]\"", 
+              Directive[
+               RGBColor[
+               0.3607843137254902, 0.596078431372549, 0.3803921568627451], 
+               25], StripOnInput -> False], ContentPadding -> False, 
+             FrameStyle -> None, FrameMargins -> {{0, 0}, {0, 0}}, 
+             StripOnInput -> False], 
+            GridBox[{{
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Message\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"The notebook is valid with 2 warning(s).\"", 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Warnings\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"This cell contains profanity\"", ",", 
+                    "\"This cell is returning $Failed\""}], "}"}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[Checkmark]\"", 
+              Directive[
+               RGBColor[
+               0.3607843137254902, 0.596078431372549, 0.3803921568627451], 
+               25], StripOnInput -> False], ContentPadding -> False, 
+             FrameStyle -> None, FrameMargins -> {{0, 0}, {0, 0}}, 
+             StripOnInput -> False], 
+            GridBox[{{
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Message\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"The notebook is valid with 2 warning(s).\"", 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Warnings\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"This cell contains profanity\"", ",", 
+                    "\"This cell is returning $Failed\""}], "}"}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Notebook\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"Notebook", "[", "]"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Errors\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"TimeStamp\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox["\"Fri 5 Jul 2019 14:55:08\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox["\"ValidNotebook\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Success["ValidNotebook", 
+   Association[
+   "MessageTemplate" :> "The notebook is valid with `warnings` warning(s).", 
+    "MessageParameters" -> Association["warnings" -> 2], 
+    "Warnings" -> {
+     "This cell contains profanity", "This cell is returning $Failed"}, 
+    "Notebook" -> Notebook[], "Errors" -> {}, "TimeStamp" -> 
+    "Fri 5 Jul 2019 14:55:08"]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.7713416065711412`*^9, {3.771341651545864*^9, 3.771341708323248*^9}},
+ CellLabel->"Out[26]=",ExpressionUUID->"3e192f8c-5691-4674-8b19-90447226cc66"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"success", " ", "=", " ", 
+  RowBox[{"Failure", "[", "\[IndentingNewLine]", 
+   RowBox[{"\"\<InvalidNotebook\>\"", ",", "\[IndentingNewLine]", 
+    RowBox[{"<|", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "\"\<MessageTemplate\>\"", "\[RuleDelayed]", 
+       "\"\<The notebook is invalid with `errors` error(s) and `warnings` \
+warning(s).\>\""}], ",", 
+      RowBox[{"\"\<MessageParameters\>\"", "\[Rule]", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<warnings\>\"", "\[Rule]", "2"}], ",", " ", 
+         RowBox[{"\"\<errors\>\"", "\[Rule]", " ", "3"}]}], "|>"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"\"\<Warnings\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<This cell contains profanity\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<This cell is returning $Failed\>\""}], "\[IndentingNewLine]", 
+        "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<Errors\>\"", " ", "\[Rule]", " ", 
+       RowBox[{
+       "{", "\[IndentingNewLine]", 
+        "\"\<This cell is containing profanities\>\"", "\[IndentingNewLine]", 
+        "}"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<Notebook\>\"", " ", "\[Rule]", " ", 
+       RowBox[{"Notebook", "[", "]"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<TimeStamp\>\"", "\[Rule]", 
+       RowBox[{"DateString", "[", "]"}]}]}], "\[IndentingNewLine]", "|>"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.771341719888631*^9, 
+  3.771341769342848*^9}},ExpressionUUID->"0fef3bf9-d263-498d-af7b-\
+b3c83a94ea4f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The notebook is invalid with 3 error(s) and 2 \
+warning(s).\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"InvalidNotebook\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The notebook is invalid with 3 error(s) and 2 \
+warning(s).\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"InvalidNotebook\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Warnings\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"This cell contains profanity\"", ",", 
+                    "\"This cell is returning $Failed\""}], "}"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Notebook\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"Notebook", "[", "]"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Errors\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   
+                   RowBox[{
+                    "{", "\"This cell is containing profanities\"", "}"}], 
+                   HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"TimeStamp\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["\"Fri 5 Jul 2019 14:55:59\"", HoldForm], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure["InvalidNotebook", 
+   Association[
+   "MessageTemplate" :> 
+    "The notebook is invalid with `errors` error(s) and `warnings` \
+warning(s).", "MessageParameters" -> 
+    Association["warnings" -> 2, "errors" -> 3], 
+    "Warnings" -> {
+     "This cell contains profanity", "This cell is returning $Failed"}, 
+    "Notebook" -> Notebook[], 
+    "Errors" -> {"This cell is containing profanities"}, "TimeStamp" -> 
+    "Fri 5 Jul 2019 14:55:59"]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.771341759128343*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"114fcc56-7943-4909-82db-ab2003ff6e66"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SubmitNotebook", "[", "nb_", "]"}], " ", ":=", " ", 
+  RowBox[{"Replace", "[", 
+   RowBox[{
+    RowBox[{"ValidateNotebook", "[", "nb", "]"}], ",", " ", 
+    RowBox[{"s_Success", " ", "\[RuleDelayed]", " ", 
+     RowBox[{"CloudDeploy", "[", 
+      RowBox[{"s", "[", "\"\<Notebook\>\"", "]"}], "]"}]}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"remember", " ", "to", " ", "remove", " ", "errors"}], " ", 
+   "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.771341865543934*^9, 3.771341894420624*^9}, {
+  3.771342008904767*^9, 
+  3.771342016926979*^9}},ExpressionUUID->"cc5a8fe3-b951-4caf-91b3-\
+02c9fdd2760b"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "this", " ", "guy", " ", "can", " ", "return", " ", "either", " ", "a", " ",
+    "failure", " ", "or", " ", "a", " ", "CloudObject"}], " ", 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.771341900590382*^9, 
+  3.771341916275635*^9}},ExpressionUUID->"62c676c3-cff8-41dc-bf55-\
+6b2b2db3e1ff"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PreviewNotebook", "[", "nb_", "]"}], " ", ":=", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"opens", " ", "on", " ", "the", " ", "frontend"}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.771341930372941*^9, 
+  3.771341943242579*^9}},ExpressionUUID->"e3850820-dde8-4fc3-aa6e-\
+841c6be6752b"]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 160, 3, 98, "Title",ExpressionUUID->"ec0620a5-ce82-44a8-8e03-3b352559c3a5"],
+Cell[743, 27, 434, 10, 30, "Input",ExpressionUUID->"c5a4ec44-5fc1-4481-a354-1854ec9f88f2"],
+Cell[CellGroupData[{
+Cell[1202, 41, 2140, 45, 367, "Input",ExpressionUUID->"497a3332-82ca-4464-a079-2c30e7ca114e"],
+Cell[3345, 88, 6779, 146, 64, "Output",ExpressionUUID->"3e192f8c-5691-4674-8b19-90447226cc66"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10161, 239, 1628, 34, 367, "Input",ExpressionUUID->"0fef3bf9-d263-498d-af7b-b3c83a94ea4f"],
+Cell[11792, 275, 7402, 156, 123, "Output",ExpressionUUID->"114fcc56-7943-4909-82db-ab2003ff6e66"]
+}, Open  ]],
+Cell[19209, 434, 678, 17, 73, "Input",ExpressionUUID->"cc5a8fe3-b951-4caf-91b3-02c9fdd2760b"],
+Cell[19890, 453, 334, 8, 30, "Input",ExpressionUUID->"62c676c3-cff8-41dc-bf55-6b2b2db3e1ff"],
+Cell[20227, 463, 327, 8, 30, "Input",ExpressionUUID->"e3850820-dde8-4fc3-aa6e-841c6be6752b"]
+}, Open  ]]
+}
+]
+*)
+
