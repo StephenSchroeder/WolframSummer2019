@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21718,        501]
-NotebookOptionsPosition[     20570,        474]
-NotebookOutlinePosition[     20907,        489]
-CellTagsIndexPosition[     20864,        486]
+NotebookDataLength[     22888,        528]
+NotebookOptionsPosition[     21548,        499]
+NotebookOutlinePosition[     21889,        514]
+CellTagsIndexPosition[     21846,        511]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,15 +27,16 @@ Cell["Proposed design", "Title",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"ValidateNotebook", "[", "nb_", "]"}], " ", ":=", " ", 
+  RowBox[{"checkNotebook", "[", "nb_", "]"}], " ", ":=", " ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "can", " ", "return", " ", "either", " ", "a", " ", "Failure", " ", "or", 
     " ", "a", " ", "Success"}], " ", "*)"}]}]], "Input",
  CellChangeTimes->{{3.7713418308174553`*^9, 3.771341854582036*^9}, {
-  3.771341921132194*^9, 
-  3.77134192475548*^9}},ExpressionUUID->"c5a4ec44-5fc1-4481-a354-\
-1854ec9f88f2"],
+  3.771341921132194*^9, 3.77134192475548*^9}, {3.771361062980071*^9, 
+  3.7713610662931385`*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[56]:=",ExpressionUUID->"c5a4ec44-5fc1-4481-a354-1854ec9f88f2"],
 
 Cell[CellGroupData[{
 
@@ -83,8 +84,8 @@ Cell[BoxData[
    "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{{3.7713415546783333`*^9, 3.771341703552491*^9}, {
   3.771341773281829*^9, 3.7713417755507803`*^9}, {3.7713420467463503`*^9, 
-  3.7713421363775377`*^9}},ExpressionUUID->"497a3332-82ca-4464-a079-\
-2c30e7ca114e"],
+  3.7713421363775377`*^9}},
+ CellLabel->"In[54]:=",ExpressionUUID->"497a3332-82ca-4464-a079-2c30e7ca114e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -184,21 +185,31 @@ Cell[BoxData[
                   "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
-                  TemplateBox[{"\"Notebook\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"Notebook", "[", "]"}], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
                   TemplateBox[{"\"Errors\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
                  TagBox[
                   RowBox[{"{", "}"}], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
+                  
+                  TemplateBox[{"\"ValidatedNotebook\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"Notebook", "[", "]"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"PreviewNotebook\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"Notebook", "[", "]"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
                   TemplateBox[{"\"TimeStamp\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["\"Fri 5 Jul 2019 14:55:08\"", "SummaryItem"]}]}, {
+                 TagBox["\"Fri 5 Jul 2019 20:16:05\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
@@ -225,20 +236,21 @@ Cell[BoxData[
     "MessageParameters" -> Association["warnings" -> 2], 
     "Warnings" -> {
      "This cell contains profanity", "This cell is returning $Failed"}, 
-    "Notebook" -> Notebook[], "Errors" -> {}, "TimeStamp" -> 
-    "Fri 5 Jul 2019 14:55:08"]],
+    "Errors" -> {}, "ValidatedNotebook" -> Notebook[], "PreviewNotebook" -> 
+    Notebook[], "TimeStamp" -> "Fri 5 Jul 2019 20:16:05"]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{
-  3.7713416065711412`*^9, {3.771341651545864*^9, 3.771341708323248*^9}},
- CellLabel->"Out[26]=",ExpressionUUID->"3e192f8c-5691-4674-8b19-90447226cc66"]
+  3.7713416065711412`*^9, {3.771341651545864*^9, 3.771341708323248*^9}, 
+   3.7713609659584165`*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"8a46829f-d593-431e-bcf4-d24908d149e4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"success", " ", "=", " ", 
+ RowBox[{"fail", " ", "=", " ", 
   RowBox[{"Failure", "[", "\[IndentingNewLine]", 
    RowBox[{"\"\<InvalidNotebook\>\"", ",", "\[IndentingNewLine]", 
     RowBox[{"<|", "\[IndentingNewLine]", 
@@ -269,8 +281,9 @@ warning(s).\>\""}], ",",
       RowBox[{"\"\<TimeStamp\>\"", "\[Rule]", 
        RowBox[{"DateString", "[", "]"}]}]}], "\[IndentingNewLine]", "|>"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
- CellChangeTimes->{{3.771341719888631*^9, 
-  3.771341769342848*^9}},ExpressionUUID->"0fef3bf9-d263-498d-af7b-\
+ CellChangeTimes->{{3.771341719888631*^9, 3.771341769342848*^9}, {
+  3.771360407104598*^9, 
+  3.7713604075829153`*^9}},ExpressionUUID->"0fef3bf9-d263-498d-af7b-\
 b3c83a94ea4f"],
 
 Cell[BoxData[
@@ -289,8 +302,9 @@ Cell[BoxData[
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
             FrameBox[
              StyleBox["\"\[WarningSign]\"", 
               Directive["Message", 35], StripOnInput -> False], 
@@ -336,8 +350,9 @@ warning(s).\"", "SummaryItem"]}},
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
             FrameBox[
              StyleBox["\"\[WarningSign]\"", 
               Directive["Message", 35], StripOnInput -> False], 
@@ -469,12 +484,22 @@ Cell[BoxData[
    "*)"}]}]], "Input",
  CellChangeTimes->{{3.771341930372941*^9, 
   3.771341943242579*^9}},ExpressionUUID->"e3850820-dde8-4fc3-aa6e-\
-841c6be6752b"]
+841c6be6752b"],
+
+Cell[BoxData["TagSet"], "Input",
+ CellChangeTimes->{{3.7713539674823256`*^9, 
+  3.771353970269297*^9}},ExpressionUUID->"a61d3d89-db82-4a2b-ae37-\
+b1adc5848d03"],
+
+Cell[BoxData["Rule"], "Input",
+ CellChangeTimes->{{3.7713547822226987`*^9, 
+  3.771354782615364*^9}},ExpressionUUID->"6db82503-5fbe-4632-9a9f-\
+47284f6697c5"]
 }, Open  ]]
 },
-WindowSize->{808, 755},
-WindowMargins->{{12, Automatic}, {Automatic, 24}},
-FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+WindowSize->{750, 911},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -489,19 +514,21 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 160, 3, 98, "Title",ExpressionUUID->"ec0620a5-ce82-44a8-8e03-3b352559c3a5"],
-Cell[743, 27, 434, 10, 30, "Input",ExpressionUUID->"c5a4ec44-5fc1-4481-a354-1854ec9f88f2"],
+Cell[580, 22, 160, 3, 96, "Title",ExpressionUUID->"ec0620a5-ce82-44a8-8e03-3b352559c3a5"],
+Cell[743, 27, 531, 11, 28, "Input",ExpressionUUID->"c5a4ec44-5fc1-4481-a354-1854ec9f88f2"],
 Cell[CellGroupData[{
-Cell[1202, 41, 2140, 45, 367, "Input",ExpressionUUID->"497a3332-82ca-4464-a079-2c30e7ca114e"],
-Cell[3345, 88, 6779, 146, 64, "Output",ExpressionUUID->"3e192f8c-5691-4674-8b19-90447226cc66"]
+Cell[1299, 42, 2162, 45, 333, "Input",ExpressionUUID->"497a3332-82ca-4464-a079-2c30e7ca114e"],
+Cell[3464, 89, 7226, 157, 71, "Output",ExpressionUUID->"8a46829f-d593-431e-bcf4-d24908d149e4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10161, 239, 1628, 34, 367, "Input",ExpressionUUID->"0fef3bf9-d263-498d-af7b-b3c83a94ea4f"],
-Cell[11792, 275, 7402, 156, 123, "Output",ExpressionUUID->"114fcc56-7943-4909-82db-ab2003ff6e66"]
+Cell[10727, 251, 1676, 35, 333, "Input",ExpressionUUID->"0fef3bf9-d263-498d-af7b-b3c83a94ea4f"],
+Cell[12406, 288, 7442, 158, 137, "Output",ExpressionUUID->"114fcc56-7943-4909-82db-ab2003ff6e66"]
 }, Open  ]],
-Cell[19209, 434, 678, 17, 73, "Input",ExpressionUUID->"cc5a8fe3-b951-4caf-91b3-02c9fdd2760b"],
-Cell[19890, 453, 334, 8, 30, "Input",ExpressionUUID->"62c676c3-cff8-41dc-bf55-6b2b2db3e1ff"],
-Cell[20227, 463, 327, 8, 30, "Input",ExpressionUUID->"e3850820-dde8-4fc3-aa6e-841c6be6752b"]
+Cell[19863, 449, 678, 17, 67, "Input",ExpressionUUID->"cc5a8fe3-b951-4caf-91b3-02c9fdd2760b"],
+Cell[20544, 468, 334, 8, 28, "Input",ExpressionUUID->"62c676c3-cff8-41dc-bf55-6b2b2db3e1ff"],
+Cell[20881, 478, 327, 8, 28, "Input",ExpressionUUID->"e3850820-dde8-4fc3-aa6e-841c6be6752b"],
+Cell[21211, 488, 160, 3, 28, "Input",ExpressionUUID->"a61d3d89-db82-4a2b-ae37-b1adc5848d03"],
+Cell[21374, 493, 158, 3, 28, "Input",ExpressionUUID->"6db82503-5fbe-4632-9a9f-47284f6697c5"]
 }, Open  ]]
 }
 ]

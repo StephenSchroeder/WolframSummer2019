@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1994726,      38090]
-NotebookOptionsPosition[   1988191,      37972]
-NotebookOutlinePosition[   1989193,      38006]
-CellTagsIndexPosition[   1989121,      38001]
+NotebookDataLength[   1994742,      38089]
+NotebookOptionsPosition[   1988207,      37971]
+NotebookOutlinePosition[   1989209,      38005]
+CellTagsIndexPosition[   1989137,      38000]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37939,12 +37939,11 @@ BIc=
 }, Open  ]],
 
 Cell["\<\
-If I want to challenge myself, I can even try to beat the predictive \
-algorithm, and set out to run at least as long as the prediction based on the \
-forecast.\
+If I want to challenge myself, I can try to beat the predictive algorithm, \
+and set out to run at least as long as the prediction based on the forecast.\
 \>", "Text",
- CellChangeTimes->{{3.770764734739951*^9, 
-  3.770764749272069*^9}},ExpressionUUID->"1419eafa-d5f3-4ead-8e11-\
+ CellChangeTimes->{{3.770764734739951*^9, 3.770764749272069*^9}, 
+   3.771430076702846*^9},ExpressionUUID->"1419eafa-d5f3-4ead-8e11-\
 2cc25783ba13"]
 }, Open  ]],
 
@@ -38000,7 +37999,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 1988981, 37995}
+ {"Title", 1988997, 37994}
  }
 *)
 (*NotebookFileOutline
@@ -38084,11 +38083,11 @@ Cell[CellGroupData[{
 Cell[1964338, 37531, 1176, 29, 55, "Input",ExpressionUUID->"3c3a6fb7-db49-4735-afdf-14c33d6f66de"],
 Cell[1965517, 37562, 21545, 375, 305, "Output",ExpressionUUID->"866af7fd-9c34-4a3b-82a3-3522a1809e77"]
 }, Open  ]],
-Cell[1987077, 37940, 310, 7, 39, "Text",ExpressionUUID->"1419eafa-d5f3-4ead-8e11-2cc25783ba13"]
+Cell[1987077, 37940, 326, 6, 39, "Text",ExpressionUUID->"1419eafa-d5f3-4ead-8e11-2cc25783ba13"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1987424, 37952, 169, 3, 59, "Subsection",ExpressionUUID->"212585b9-22bc-498f-9a96-782e7517f905"],
-Cell[1987596, 37957, 555, 10, 65, "Text",ExpressionUUID->"4293b93a-7d0b-411b-ba10-a608da6f383b"]
+Cell[1987440, 37951, 169, 3, 59, "Subsection",ExpressionUUID->"212585b9-22bc-498f-9a96-782e7517f905"],
+Cell[1987612, 37956, 555, 10, 65, "Text",ExpressionUUID->"4293b93a-7d0b-411b-ba10-a608da6f383b"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
