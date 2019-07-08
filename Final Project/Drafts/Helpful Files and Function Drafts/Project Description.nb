@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12292,        307]
-NotebookOptionsPosition[     10140,        266]
-NotebookOutlinePosition[     10481,        281]
-CellTagsIndexPosition[     10438,        278]
+NotebookDataLength[     12320,        307]
+NotebookOptionsPosition[     10168,        266]
+NotebookOutlinePosition[     10509,        281]
+CellTagsIndexPosition[     10466,        278]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -126,7 +126,7 @@ Cell["Notes from Computational Journal Discussion", "Subsection",
 Cell["\<\
 Look in notebook archive and find out why the pink boxes are there. 
 Speed of publishing.
-***Can outputs be regenerated???**** this is SUPER important. If the code is \
+***Can outputs be regenerated???**** this is SU1PER important. If the code is \
 re-ran will it actually work?
 -> but then again, you might want to freeze the output cell, then if the cell \
 is re-run it will generate another output cell.
@@ -139,11 +139,11 @@ When making button for check notebooks, allow you to re-press the button \
 which will remove, then re-check the notebook\
 \>", "Text",
  CellChangeTimes->{{3.771532292196068*^9, 3.7715323115100946`*^9}, {
-  3.7715333437400637`*^9, 3.7715333545580177`*^9}, {3.771533861578986*^9, 
-  3.7715338831225667`*^9}, {3.7715342895791636`*^9, 3.771534311595064*^9}, {
-  3.7715346281878643`*^9, 3.771534646753454*^9}, {3.771535055711771*^9, 
-  3.771535070886736*^9}, {3.7715364905785007`*^9, 
-  3.7715365175640993`*^9}},ExpressionUUID->"15b64776-d2e5-4ce3-a249-\
+   3.7715333437400637`*^9, 3.7715333545580177`*^9}, {3.771533861578986*^9, 
+   3.7715338831225667`*^9}, {3.7715342895791636`*^9, 3.771534311595064*^9}, {
+   3.7715346281878643`*^9, 3.771534646753454*^9}, {3.771535055711771*^9, 
+   3.771535070886736*^9}, {3.7715364905785007`*^9, 3.7715365175640993`*^9}, 
+   3.771601426985321*^9},ExpressionUUID->"15b64776-d2e5-4ce3-a249-\
 a0088d1fdb2d"],
 
 Cell["\<\
@@ -291,23 +291,23 @@ Cell[4713, 110, 259, 6, 34, "Text",ExpressionUUID->"a581a0d5-4164-46a1-867d-c9e8
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5009, 121, 186, 2, 53, "Subsection",ExpressionUUID->"b027721a-c35e-4975-a718-03fafbe88620"],
-Cell[5198, 125, 1071, 21, 298, "Text",ExpressionUUID->"15b64776-d2e5-4ce3-a249-a0088d1fdb2d"],
-Cell[6272, 148, 299, 8, 78, "Text",ExpressionUUID->"4e6589a0-c81f-4190-af21-a5897fca047c"]
+Cell[5198, 125, 1099, 21, 298, "Text",ExpressionUUID->"15b64776-d2e5-4ce3-a249-a0088d1fdb2d"],
+Cell[6300, 148, 299, 8, 78, "Text",ExpressionUUID->"4e6589a0-c81f-4190-af21-a5897fca047c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6608, 161, 170, 3, 53, "Subsection",ExpressionUUID->"3c404965-ada0-4146-af29-3b1062092ab1"],
-Cell[6781, 166, 431, 11, 144, "Text",ExpressionUUID->"3cb6c972-b6f6-4504-b21a-b67b5a96a85b"]
+Cell[6636, 161, 170, 3, 53, "Subsection",ExpressionUUID->"3c404965-ada0-4146-af29-3b1062092ab1"],
+Cell[6809, 166, 431, 11, 144, "Text",ExpressionUUID->"3cb6c972-b6f6-4504-b21a-b67b5a96a85b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7249, 182, 172, 3, 53, "Subsection",ExpressionUUID->"94b3fbc4-1c9b-445c-b09d-540311c29d1e"],
-Cell[7424, 187, 441, 11, 122, "Text",ExpressionUUID->"2e019e20-4394-45a8-81fa-156f3e5188b2"]
+Cell[7277, 182, 172, 3, 53, "Subsection",ExpressionUUID->"94b3fbc4-1c9b-445c-b09d-540311c29d1e"],
+Cell[7452, 187, 441, 11, 122, "Text",ExpressionUUID->"2e019e20-4394-45a8-81fa-156f3e5188b2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7902, 203, 155, 3, 96, "Title",ExpressionUUID->"5bbb4f4d-b880-448c-af19-b28e9f517e13"],
-Cell[8060, 208, 799, 19, 106, "Input",ExpressionUUID->"1e0d92d7-a287-4df6-ab33-ddf9ad25dd8f"],
-Cell[8862, 229, 495, 12, 48, "Input",ExpressionUUID->"88a1d7ec-177e-433d-bceb-3fb5f955a297"],
-Cell[9360, 243, 449, 11, 30, "Input",ExpressionUUID->"8c976f24-c28c-468e-8b0e-720d47491cb1"],
-Cell[9812, 256, 312, 7, 28, "Input",ExpressionUUID->"0ce89c50-f197-4afa-aee4-d18b74cdc122"]
+Cell[7930, 203, 155, 3, 96, "Title",ExpressionUUID->"5bbb4f4d-b880-448c-af19-b28e9f517e13"],
+Cell[8088, 208, 799, 19, 106, "Input",ExpressionUUID->"1e0d92d7-a287-4df6-ab33-ddf9ad25dd8f"],
+Cell[8890, 229, 495, 12, 48, "Input",ExpressionUUID->"88a1d7ec-177e-433d-bceb-3fb5f955a297"],
+Cell[9388, 243, 449, 11, 30, "Input",ExpressionUUID->"8c976f24-c28c-468e-8b0e-720d47491cb1"],
+Cell[9840, 256, 312, 7, 28, "Input",ExpressionUUID->"0ce89c50-f197-4afa-aee4-d18b74cdc122"]
 }, Open  ]]
 }
 ]
