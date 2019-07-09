@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9826,        244]
-NotebookOptionsPosition[      7743,        201]
-NotebookOutlinePosition[      8132,        219]
-CellTagsIndexPosition[      8089,        216]
+NotebookDataLength[     18270,        446]
+NotebookOptionsPosition[     12899,        339]
+NotebookOutlinePosition[     15907,        409]
+CellTagsIndexPosition[     15864,        406]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -196,16 +196,206 @@ Cell[BoxData[
  CellChangeTimes->{3.7711811627690563`*^9, 3.7712412953996773`*^9, 
   3.771243184082568*^9},
  CellLabel->"Out[94]=",ExpressionUUID->"b177668d-ad6e-42a3-bd98-d4e5721e731d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateWindow", "[", 
+  RowBox[{"DockedCells", "\[Rule]", 
+   RowBox[{"Cell", "[", 
+    RowBox[{
+     RowBox[{"BoxData", "[", 
+      RowBox[{"ToBoxes", "[", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", 
+         RowBox[{"check", ",", " ", "clear", ",", "submit"}], "}"}], "]"}], 
+       "]"}], "]"}], ",", "\"\<DockedCell\>\""}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7716323045962963`*^9, 3.7716323265081263`*^9}, 
+   3.77163278233366*^9},ExpressionUUID->"3e247ebb-fb63-4e50-b092-\
+0f162707ae1d"],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["2d52f_shm", 3, 1]],67,
+   "FrontEndObject[LinkObject[\"2d52f_shm\", 3, 1]]","67","\"Untitled-11\""},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{{3.7716323064699516`*^9, 3.7716323285745564`*^9}},
+ CellLabel->
+  "Out[236]=",ExpressionUUID->"3c0d7f61-afd3-4653-9b91-2f5eaeed5b73"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cell", "[", 
+  RowBox[{
+   RowBox[{"StyleData", "[", "\"\<NotebookArchive Style\>\"", "]"}], ",", 
+   RowBox[{"DockedCells", "\[Rule]", 
+    RowBox[{"Cell", "[", 
+     RowBox[{
+      RowBox[{"BoxData", "[", 
+       RowBox[{"ToBoxes", "[", 
+        RowBox[{"Row", "[", 
+         RowBox[{"{", 
+          RowBox[{"check", ",", " ", "clear", ",", "submit"}], "}"}], "]"}], 
+        "]"}], "]"}], ",", "\"\<DockedCell\>\""}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7716325864187555`*^9, 3.771632642033988*^9}, {
+   3.77163271358488*^9, 3.771632724143297*^9}, 
+   3.771632796701583*^9},ExpressionUUID->"fa0be721-e25b-4ef4-a46b-\
+c35207023dca"],
+
+Cell[BoxData[
+ RowBox[{"Cell", "[", 
+  RowBox[{
+   RowBox[{"StyleData", "[", "\<\"NotebookArchive Style\"\>", "]"}], ",", 
+   RowBox[{"DockedCells", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      ButtonBox["\<\"Check Notebook\"\>",
+       Appearance->Automatic,
+       ButtonFunction:>$CellContext`ValidateNotebook[],
+       Evaluator->Automatic,
+       Method->"Preemptive"], ",", 
+      ButtonBox["\<\"Clear Messages\"\>",
+       Appearance->Automatic,
+       ButtonFunction:>($CellContext`ClearNotebook[]; Null),
+       Evaluator->Automatic,
+       Method->"Preemptive"], ",", 
+      ButtonBox["\<\"Submit Notebook\"\>",
+       Appearance->Automatic,
+       ButtonFunction:>($CellContext`SubmitNotebook[]; Null),
+       Evaluator->Automatic,
+       Method->"Preemptive"]}], "}"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{3.7716327280014687`*^9},
+ CellLabel->
+  "Out[237]=",ExpressionUUID->"0fdc6995-e571-42d5-aeb8-07e496a1184d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cell", "[", 
+  RowBox[{
+   RowBox[{"StyleData", "[", "\"\<NotebookArchive Style\>\"", "]"}], ",", 
+   RowBox[{"DockedCells", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Cell", "[", 
+      RowBox[{"BoxData", "[", 
+       RowBox[{"ToBoxes", "[", 
+        RowBox[{"Row", "[", 
+         RowBox[{"{", 
+          RowBox[{"check", ",", " ", "clear", ",", "submit"}], "}"}], "]"}], 
+        "]"}], "]"}], "]"}], "}"}]}]}], "]"}]], "Input",
+ CellLabel->
+  "In[238]:=",ExpressionUUID->"46a5871a-e1a6-46b4-99bf-af358fbcc720"],
+
+Cell[BoxData[
+ RowBox[{"Cell", "[", 
+  RowBox[{
+   RowBox[{"StyleData", "[", "\<\"NotebookArchive Style\"\>", "]"}], ",", 
+   RowBox[{"DockedCells", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Cell", "[", 
+      RowBox[{"BoxData", "[", 
+       RowBox[{"TemplateBox", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ButtonBox", "[", 
+            RowBox[{"\<\"\\\"Check Notebook\\\"\"\>", ",", 
+             RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+              RowBox[{"ValidateNotebook", "[", "]"}]}], ",", 
+             RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Method", "\[Rule]", "\<\"Preemptive\"\>"}]}], "]"}], 
+           ",", 
+           RowBox[{"ButtonBox", "[", 
+            RowBox[{"\<\"\\\"Clear Messages\\\"\"\>", ",", 
+             RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"ClearNotebook", "[", "]"}], ";"}], ")"}]}], ",", 
+             RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Method", "\[Rule]", "\<\"Preemptive\"\>"}]}], "]"}], 
+           ",", 
+           RowBox[{"ButtonBox", "[", 
+            RowBox[{"\<\"\\\"Submit Notebook\\\"\"\>", ",", 
+             RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"SubmitNotebook", "[", "]"}], ";"}], ")"}]}], ",", 
+             RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+             RowBox[{"Method", "\[Rule]", "\<\"Preemptive\"\>"}]}], "]"}]}], 
+          "}"}], ",", "\<\"RowDefault\"\>"}], "]"}], "]"}], "]"}], "}"}]}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.771632962252103*^9},
+ CellLabel->
+  "Out[238]=",ExpressionUUID->"6367f5dc-4e00-4a8d-aafe-951cf1d6bd2c"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->Medium,
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowMargins->{{322, Automatic}, {41, Automatic}},
 Visible->True,
 ShowCellTags->True,
 Magnification->1,
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
-StyleDefinitions->"Default.nb"
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "CheckingToolbar.nb"]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["NotebookArchive Style"], MenuSortingValue -> 10000], 
+      Cell[
+       BoxData[
+        RowBox[{"Cell", "[", 
+          RowBox[{
+            RowBox[{"StyleData", "[", "\"NotebookArchive Style\"", "]"}], ",", 
+            RowBox[{"DockedCells", "\[Rule]", 
+              RowBox[{"{", 
+                RowBox[{"Cell", "[", 
+                  RowBox[{"BoxData", "[", 
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ButtonBox", "[", 
+                    RowBox[{"\"\\\"Check Notebook\\\"\"", ",", 
+                    RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+                    RowBox[{"ValidateNotebook", "[", "]"}]}], ",", 
+                    RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Method", "\[Rule]", "\"Preemptive\""}]}], "]"}], 
+                    ",", 
+                    RowBox[{"ButtonBox", "[", 
+                    RowBox[{"\"\\\"Clear Messages\\\"\"", ",", 
+                    RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"ClearNotebook", "[", "]"}], ";"}], ")"}]}], ",", 
+                    RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Method", "\[Rule]", "\"Preemptive\""}]}], "]"}], 
+                    ",", 
+                    RowBox[{"ButtonBox", "[", 
+                    RowBox[{"\"\\\"Submit Notebook\\\"\"", ",", 
+                    RowBox[{"ButtonFunction", "\[RuleDelayed]", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"SubmitNotebook", "[", "]"}], ";"}], ")"}]}], ",", 
+                    RowBox[{"Appearance", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Evaluator", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Method", "\[Rule]", "\"Preemptive\""}]}], 
+                    "]"}]}], "}"}], ",", "\"RowDefault\""}], "]"}], "]"}], 
+                  "]"}], "}"}]}]}], "]"}]], "Input"]}, Open]]}, 
+  WindowSize -> {775, 796}, 
+  WindowMargins -> {{Automatic, 168}, {-7, Automatic}}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -244,6 +434,18 @@ Cell[6887, 176, 190, 3, 34, "Text",ExpressionUUID->"fa55e14f-5b43-41e0-ac7c-4ca8
 Cell[CellGroupData[{
 Cell[7102, 183, 229, 3, 28, "Input",ExpressionUUID->"2b73d14b-7ccc-49d5-bc8f-b3eec86f196d"],
 Cell[7334, 188, 381, 9, 32, "Output",ExpressionUUID->"b177668d-ad6e-42a3-bd98-d4e5721e731d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7752, 202, 535, 13, 48, "Input",ExpressionUUID->"3e247ebb-fb63-4e50-b092-0f162707ae1d"],
+Cell[8290, 217, 352, 7, 51, "Output",ExpressionUUID->"3c0d7f61-afd3-4653-9b91-2f5eaeed5b73"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8679, 229, 672, 16, 48, "Input",ExpressionUUID->"fa0be721-e25b-4ef4-a46b-c35207023dca"],
+Cell[9354, 247, 935, 24, 75, "Output",ExpressionUUID->"0fdc6995-e571-42d5-aeb8-07e496a1184d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10326, 276, 538, 14, 48, "Input",ExpressionUUID->"46a5871a-e1a6-46b4-99bf-af358fbcc720"],
+Cell[10867, 292, 2004, 43, 147, "Output",ExpressionUUID->"6367f5dc-4e00-4a8d-aafe-951cf1d6bd2c"]
 }, Open  ]]
 }, Open  ]]
 }
