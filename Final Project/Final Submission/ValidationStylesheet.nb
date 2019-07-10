@@ -1,0 +1,65 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1859,         55]
+NotebookOptionsPosition[      1348,         39]
+NotebookOutlinePosition[      1726,         55]
+CellTagsIndexPosition[      1683,         52]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> "Default.nb"],ExpressionUUID->"9130aacc-0b53-46cb-ae7b-393e27237023"],
+
+Cell[StyleData["Notebook"],
+ DockedCells->Cell[
+   BoxData[
+    RowBox[{
+      ButtonBox[
+      "Check Notebook", ButtonFunction :> (ValidateNotebook[]; Null), 
+       Appearance -> Automatic, Evaluator -> Automatic, Method -> Preemptive], 
+      ButtonBox[
+      "Clear Messages", ButtonFunction :> (ClearNotebook[]; Null), Appearance -> 
+       Automatic, Evaluator -> Automatic, Method -> Preemptive], 
+      ButtonBox[
+      "Submit Notebook", ButtonFunction :> (SubmitNotebook[]; Null), 
+       Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+       Preemptive]}]], DockedCell],
+ MenuSortingValue->
+  10000,ExpressionUUID->"bd517d43-d849-4f15-8a67-c28fe5a215c0"]
+},
+WindowSize->{775, 796},
+WindowMargins->{{Automatic, 282}, {Automatic, 51}},
+Visible->True,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"PrivateStylesheetFormatting.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 104, 0, 40, 49, 0, "StyleData", "StyleDefinitions", "",ExpressionUUID->"9130aacc-0b53-46cb-ae7b-393e27237023"],
+Cell[665, 22, 679, 15, 40, 27, 0, "StyleData", "Notebook", "All",ExpressionUUID->"bd517d43-d849-4f15-8a67-c28fe5a215c0",
+ MenuSortingValue->10000]
+}
+]
+*)
+
+(* End of internal cache information *)
+
